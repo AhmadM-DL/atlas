@@ -66,8 +66,10 @@ premalink: /courses/:title
         <h2>Teaching Assistants</h2>
         {% for assistant in page.assistants %}
         <div class="image--cover-container">
-          <img src="{{assistant.img}}" class="image--cover">
-          <p><a style="color: black; text-decoration: none;">{{assistant.name}}</a></p>
+          <a href="{{assistant.link}}">
+            <img src="{{assistant.img}}" class="image--cover">
+            {{assistant.name}}
+          </a>
         </div>
         {% endfor %}
       </div>
