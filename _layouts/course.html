@@ -1,0 +1,78 @@
+---
+layout: default
+premalink: /courses/:title
+---
+
+<div>
+
+  <h1>{{page.title}}</h1>
+
+  <div class="announcement-box" style="margin-top:30px">
+    <h2>Summary</h2>
+    <ul>
+
+      <li class="no-p-margin">
+        <b>Audience</b>: {{page.audience}}
+      </li>
+
+      <li class="no-p-margin">
+        <b>Objectives</b>:
+        <ul>
+          {% for objective in page.objectives %}
+          <li> {{ objective }} </li>
+          {% endfor %}
+        </ul>
+      </li>
+
+      {% if page.takeaways and page.takeaways.size != 0 %}
+      <li class="no-p-margin">
+        <b>Takeaway</b>:
+        <ul>
+          {% for takeaway in page.takeaways %}
+          <li> {{ takeaway }} </li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endif %}
+
+    </ul>
+  </div>
+
+  <br />
+
+  <h2>Course Description</h2>
+  <p>{{page.description}}</p>
+
+  <br>
+
+  <div>
+    <div style="width:35%; float: left">
+      <div class="profile-pic-gallary ">
+        <h2>Instructors</h2>
+        {% for instructor in page.instructors %}
+        <div class="image--cover-container">
+          <a href="{{instructor.link}}">
+            <img src="{{instructor.img}}" class="image--cover">
+            {{instructor.name}}
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    {% if page.assistants and page.assistants.size !=0 %}
+    <div style="width:65%; float: left">
+      <div class="profile-pic-gallary ">
+        <h2>Teaching Assistants</h2>
+        {% for assistant in page.assistants %}
+        <div class="image--cover-container">
+          <img src="{{assistant.img}}" class="image--cover">
+          <p><a style="color: black; text-decoration: none;">{{assistant.name}}</a></p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
