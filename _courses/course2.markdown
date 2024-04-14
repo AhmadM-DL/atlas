@@ -2,7 +2,7 @@
 layout: course
 title: Course 2
 published: true
-thumbnail: /assets/img/course2.jpg
+thumbnail: /atlas/assets/img/course2.jpg
 type: Course
 note: 
 headline: Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
@@ -18,13 +18,13 @@ description:
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 instructors:
     - name: Instructor 1
-      img: /assets/img/instructor_1.jpg
+      img: /atlas/assets/img/instructor_1.jpg
       link: https://www.linkedin.com/
     - name: Instructor 3
-      img: /assets/img/instructor_3.png
+      img: /atlas/assets/img/instructor_3.png
       link: https://www.linkedin.com/
 assistants:
     - name: Instructor 2
-      img: /assets/img/instructor_2.jpg
+      img: /atlas/assets/img/instructor_2.jpg
       link: https://www.linkedin.com/
 ---

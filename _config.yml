@@ -1,5 +1,5 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/atlas" # the subpath of your site, e.g. /blog
+baseurl: "/atlas" # N.B. make sure to change the urls in collections (a.k.a courses)
 title: "Atlas Learning Solutions" 
 description: "Lorem ipsum dolor sit amet"
 

@@ -5,8 +5,8 @@ layout: default
 <div class="container">
 
     <div class="container-item">
-        <a href="/courses/competition">
-            <img src="/assets/img/leadstory.png">
+        <a href="{{site.baseurl}}/courses/competition">
+            <img src="{{site.baseurl}}/assets/img/leadstory.png">
         </a>
     </div>
 
@@ -53,7 +53,7 @@ layout: default
             <div class="card">
                 <img src="{{course.thumbnail}}">
                 <div class="title">
-                    <a href="{{course.url}}" style="text-decoration: none; color: black;">
+                    <a href="{{site.baseurl}}/{{course.url}}" style="text-decoration: none; color: black;">
                         <h1>{{course.title}}</h1>
                     </a>
                     <h3>{{course.headline}}</h3>
